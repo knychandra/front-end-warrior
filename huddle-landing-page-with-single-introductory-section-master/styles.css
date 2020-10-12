@@ -1,0 +1,229 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(images/bg-mobile.svg) #674baf;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.logo img {
+  max-width: 45%;
+  margin-bottom: 57px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+main {
+  color: #fff;
+  text-align: center;
+}
+
+main h1 {
+  margin-top: 65px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+main p {
+  line-height: 1.7em;
+}
+
+main .register {
+  background-color: #fff;
+  height: 45px;
+  width: 70%;
+  max-width: 215px;
+  margin: 30px auto;
+  color: #674baf;
+  line-height: 45px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+  font-size: 0.85em;
+  border: none;
+  cursor: pointer;
+}
+
+.social {
+  width: 80%;
+  text-align: center;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.social i {
+  width: 20%;
+  font-size: 2em;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .attribution a {
+  color: white;
+  -webkit-text-decoration: white;
+  text-decoration: white;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background: none;
+    background: url(images/bg-desktop.svg) #674baf;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    background: url(images/bg-desktop.svg) #674baf;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .hero {
+    width: 50%;
+    float: left;
+  }
+
+  section.middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 35px;
+    float: right;
+    width: 50%;
+    position: relative;
+  }
+
+  main h1 {
+    width: 80%;
+    text-align: left;
+    font-size: 1.8em;
+    margin: 0;
+  }
+
+  main p {
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.85em;
+  }
+
+  .register {
+    margin: 0 !important;
+    position: absolute;
+    left: 33px;
+  }
+
+  .social {
+    width: 80%;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .social i {
+    width: 1em;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  body {
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  main h1 {
+    font-size: 2.4em;
+  }
+
+  main p {
+    font-size: 0.9em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
