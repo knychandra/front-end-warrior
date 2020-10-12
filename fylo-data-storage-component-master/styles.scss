@@ -1,0 +1,232 @@
+$PaleBlue: hsl(243, 100%, 93%);
+$GrayishBlue: hsl(229, 7%, 55%);
+$DarkBlue: hsl(228, 56%, 26%);
+$VeryDarkBlue: hsl(229, 57%, 11%);
+
+$Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+    font-size: 14px;
+    background: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+section.top {
+    background-color: $DarkBlue;
+    border-radius: 10px 100px 10px 10px;
+    padding: 47px;
+    min-height: 225px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+section.top ul li {
+    list-style: none;
+}
+
+
+.icons {
+    display: flex;
+}
+
+.icon-container {
+    background-color: $VeryDarkBlue;
+    display: inline-block;
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8.5px;
+    margin-top: 40px;
+}
+
+.icon-container:not(:last-child) {
+    margin-right: 15px;
+}
+
+section.bottom {
+    background-color: $DarkBlue;
+    border-radius: 10px 10px 10px 10px;
+    padding: 45px;
+    margin-top: 20px;
+    position: relative;
+    min-height: 195px;
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.bottom p {
+    color: $PaleBlue;
+}
+
+section.bottom p span {
+    font-weight: 700;
+}
+
+section.bottom .whiteBox {
+    position: absolute;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 50%;
+    bottom: -20%;
+    left: 25%;
+    color: #9696a0;
+    font-weight: 700;
+}
+
+section.bottom .big {
+    font-size: 3em;
+    color: $VeryDarkBlue;
+    margin-right: 10px;
+}
+
+section.bottom .small {
+    margin-top: 5px;
+}
+
+section.bottom .progress-bar {
+    margin-top: 17.5px;
+    width: 100%;
+    background-color: #141f4c;
+    height: 17.5px;
+    border-radius: 75px;
+}
+
+section.bottom .progress-bar .progress {
+    width: 75%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 100%;
+    border-radius: 75px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section.bottom .progress-bar .circle {
+    width: 14px;
+    height: 11px;
+    background: #fbfaf8;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+section.bottom .zero {
+    margin-top: 8px;
+    float: left;
+    font-weight: 700;
+}
+
+section.bottom .bought {
+    margin-top: 8px;
+    float: right;
+    font-weight: 700;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.attribution a {
+    color: #ffffff !important;
+}
+
+@media screen and(min-width: 1000px) {
+    body {
+        background: url(images/bg-desktop.png) $VeryDarkBlue;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    section.top {
+        margin-left: 0px;
+        height: 225px;
+        width: 350px;
+        margin-right: 0;
+    }
+
+    section.bottom {
+        margin: 0;
+        height: 195px;
+        min-width: 600px;
+        margin-left: 25px;
+    }
+
+
+    section.bottom .whiteBox {
+        position: absolute;
+        bottom: 175px;
+        left: 380px;
+        max-width: 175px;
+        border-radius: 12px;
+    }
+
+    section.bottom p.info {
+        text-align: left;
+    }
+
+    section.bottom .whiteBox:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 0;
+        height: 0;
+        border: 38px solid transparent;
+        border-top-color: #ffffff;
+        border-bottom: 0;
+        border-right: 0;
+        margin-left: 93px;
+        margin-bottom: -20px;
+    }
+
+    .attribution {
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: absolute;
+        bottom: 50px;
+    }
+}
