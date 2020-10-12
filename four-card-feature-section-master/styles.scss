@@ -1,0 +1,165 @@
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+body {
+    background-color: #fafafa;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    text-align: center;
+
+    h1 {
+        font-size: 1.6em;
+        color: #46485d;
+        font-weight: 200;
+    }
+
+    h1 span {
+        display: block;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 0.88em;
+        color: #cbcacf;
+    }
+
+}
+
+.card {
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 7.5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 220px;
+    padding: 20px;
+    margin: 32px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .05), 0 6px 6px rgba(0, 0, 0, .01);
+
+    h2 {
+        color: #4e4f63;
+        font-size: 1.25em;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0;
+        color: #b8b9bd;
+        font-size: 0.8em;
+        line-height: 2em;
+    }
+
+    img {
+        position: absolute;
+        right: 28px;
+        bottom: 28px;
+    }
+}
+
+.supervisor {
+    border-top: 3px solid $Cyan;
+}
+
+.teamBuilder {
+    border-top: 3px solid $Red;
+}
+
+.karma {
+    border-top: 3px solid $Orange;
+}
+
+.calculator {
+    border-top: 3px solid $Blue;
+}
+
+@media screen and (min-width: 500px) {
+
+    main {
+        h1 {
+            font-size: 2.1em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .supervisor {
+        width: 50%;
+        float: left;
+    }
+
+    .teamBuilder {
+        width: 50%;
+        float: right;
+    }
+
+    .karma {
+        width: 50%;
+        float: left;
+    }
+
+    .calculator {
+        width: 50%;
+        float: right;
+    }
+
+    footer {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .card {
+        max-width: 23%;
+        flex-wrap: wrap;
+        float: none;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .box-push {
+        transform: translatey(50%);
+    }
+
+}
