@@ -1,0 +1,190 @@
+//Text
+$Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+$Softred: hsl(14, 88%, 65%);
+// Gradient
+$Softviolet: hsl(273, 75%, 66%);
+$Softblue: hsl(240, 73%, 65%);
+// Text
+$Lightgrayishblue: hsl(240, 5%, 91%);
+// Divider
+$Lightgrayishblue: hsl(240, 5%, 91%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background: url(images/bg-pattern-mobile.svg) $Softviolet;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 85%;
+    margin: 150px auto;
+    border-radius: 25px;
+    position: relative;
+    background-color: #fff;
+    background: url(images/bg-pattern-mobile.svg) white;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.container .questions .collapsibles .arrow {
+    transform-origin: center;
+    transition: all .1s ease;
+    cursor: pointer;
+    transform: rotateZ(0);
+}
+
+.rotate {
+    transform: rotateZ(180deg) !important;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 3em;
+}
+
+.container .hero {
+    // position: absolute;
+    // top: -110px;
+    // left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 25px;
+    margin-top: -110px;
+}
+
+.container .hero .desktop-hero {
+    display: none;
+}
+
+.container .hero .box {
+    display: none;
+}
+
+.container .questions {
+    padding: 25px;
+}
+
+.container .collapsibles {
+    font-size: 1.1em;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    background-color: none;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.container .collapsibles:hover {
+    color: $Softred;
+}
+
+.container .collapsibles img {
+    position: absolute;
+    right: 0;
+}
+
+.container .collapsibles:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.container .panel {
+    background-color: none;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: #b2b1b7;
+    line-height: 1.6em;
+}
+
+.container .divider {
+    margin-bottom: 15px;
+}
+
+.attribution a {
+    color: white !important;
+}
+
+// Responsive
+
+@media screen and (min-width: 1000px) {
+
+    .container {
+        flex-direction: row;
+        position: relative;
+        min-height: 635px;
+        max-width: 1000px;
+        align-items: center;
+        justify-content: center;
+        background: url(images/bg-pattern-desktop.svg) #fff;
+        background-repeat: no-repeat;
+        background-position-x: -400px;
+        background-position-y: -100px;
+        background-size: 760px;
+    }
+
+    .container .hero {
+        width: 40%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .hero .mobile-hero {
+        display: none;
+    }
+
+
+    .container .hero .desktop-hero {
+        display: inline-block;
+        width: 400px;
+        position: absolute;
+        top: 160px;
+        left: -40px;
+        clip: rect(0, 500px, 380px, 40px);
+    }
+
+    .container .hero .box {
+        position: absolute;
+        display: inline-block;
+        width: 200px;
+        left: -97px;
+        bottom: 200px;
+    }
+
+
+    .container .questions {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+
+    .container .questions .faq h1 {
+        text-align: left;
+    }
+}

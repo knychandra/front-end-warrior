@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background: url(images/bg-pattern-mobile.svg) #af67e9;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 85%;
+  margin: 150px auto;
+  border-radius: 25px;
+  position: relative;
+  background-color: #fff;
+  background: url(images/bg-pattern-mobile.svg) white;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.container .questions .collapsibles .arrow {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  cursor: pointer;
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+}
+
+.rotate {
+  -webkit-transform: rotateZ(180deg) !important;
+          transform: rotateZ(180deg) !important;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 3em;
+}
+
+.container .hero {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 25px;
+  margin-top: -110px;
+}
+
+.container .hero .desktop-hero {
+  display: none;
+}
+
+.container .hero .box {
+  display: none;
+}
+
+.container .questions {
+  padding: 25px;
+}
+
+.container .collapsibles {
+  font-size: 1.1em;
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  position: relative;
+}
+
+.container .collapsibles:hover {
+  color: #f47c57;
+}
+
+.container .collapsibles img {
+  position: absolute;
+  right: 0;
+}
+
+.container .collapsibles:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.container .panel {
+  background-color: none;
+  display: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+  color: #b2b1b7;
+  line-height: 1.6em;
+}
+
+.container .divider {
+  margin-bottom: 15px;
+}
+
+.attribution a {
+  color: white !important;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    min-height: 635px;
+    max-width: 1000px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url(images/bg-pattern-desktop.svg) #fff;
+    background-repeat: no-repeat;
+    background-position-x: -400px;
+    background-position-y: -100px;
+    background-size: 760px;
+  }
+  .container .hero {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+  .container .hero .mobile-hero {
+    display: none;
+  }
+  .container .hero .desktop-hero {
+    display: inline-block;
+    width: 400px;
+    position: absolute;
+    top: 160px;
+    left: -40px;
+    clip: rect(0, 500px, 380px, 40px);
+  }
+  .container .hero .box {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    left: -97px;
+    bottom: 200px;
+  }
+  .container .questions {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  .container .questions .faq h1 {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
