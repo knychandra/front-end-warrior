@@ -1,0 +1,222 @@
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+$GrayishBlue: hsl(212, 23%, 69%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: $LightGrayishBlue;
+    height: 100vh;
+}
+
+.container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 12.5px;
+    max-width: 850px;
+}
+
+.container .hero img {
+    max-width: 100%;
+    border-radius: 12.5px 12.5px 0 0;
+}
+
+.container content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.container content .title {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: $VeryDarkGrayishBlue;
+    margin-left: auto;
+}
+
+.container content p {
+    margin-top: 20px;
+    line-height: 1.6em;
+    color: $DesaturatedDarkBlue;
+}
+
+.container content .profile {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.container content .profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.container content .profile img {
+    border-radius: 50%;
+    max-width: 3em;
+    display: inline-block;
+}
+
+
+
+.container content .profile h2 {
+    font-size: 1em;
+    color: $VeryDarkGrayishBlue;
+}
+
+.container content .profile p {
+    margin-top: 0;
+    color: $DesaturatedDarkBlue;
+}
+
+.container content .profile .share-icon {
+    background-color: $LightGrayishBlue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 10;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+}
+
+.container content .profile .share-icon:hover {
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+.container .share-box {
+    display: none;
+    background-color: $VeryDarkGrayishBlue;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    align-items: center;
+    border-radius: 0 0 12.5px 12.5px;
+}
+
+.container .share-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+}
+
+.container .share-box h2 {
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: 0.35em;
+    font-weight: 400;
+}
+
+.container .share-box img {
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.show {
+    display: flex !important;
+}
+
+.changeColor {
+    background-color: #6d8199 !important;
+}
+
+.brightness {
+    filter: brightness(200%);
+}
+
+.attribution {
+    margin-top: 50px;
+}
+
+
+
+@media screen and (min-width: 770px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .container .hero img {
+        min-height: 100%;
+        // max-width: 300px;
+        border-radius: 12.5px 0 0 12.5px;
+    }
+
+    .container content {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .container content .title {
+        font-size: 1.5em;
+    }
+
+    .container content p {
+        font-size: 1.1em;
+    }
+
+    .container .share-box {
+        position: absolute;
+        width: 205px;
+        height: 45px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        bottom: 75px;
+        right: -52px;
+    }
+
+    .container .share-box:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: $VeryDarkGrayishBlue;
+        border-bottom: 0;
+        margin-left: -10px;
+        margin-bottom: -10px;
+    }
+
+    .container .share-box .share-content {
+        display: flex;
+        justify-content: center;
+        font-size: 0.85em;
+    }
+
+    .container .share-box .share-content img {
+        margin-left: 6px;
+        margin-right: 6px;
+        width: 1.5em;
+    }
+}
