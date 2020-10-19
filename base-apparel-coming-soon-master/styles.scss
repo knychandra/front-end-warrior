@@ -1,0 +1,226 @@
+$DesaturatedRed: hsl(0, 36%, 70%);
+$SoftRed: hsl(0, 93%, 68%);
+$DarkGrayishRed: hsl(0, 6%, 24%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    padding: 30px;
+    max-width: 50%;
+}
+
+section.hero img {
+    width: 100%;
+    background: url()
+}
+
+section.main {
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.main h1 {
+    font-size: 2.7em;
+    text-transform: uppercase;
+    color: $DarkGrayishRed;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    line-height: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+section.main h1 span {
+    color: #c69898;
+    font-weight: 300;
+}
+
+section.main .info {
+    color: #c69898;
+    line-height: 1.5em;
+}
+
+section.email-form {
+    width: 85%;
+    margin: 50px;
+    position: relative;
+}
+
+section.email-form label {
+    display: none;
+}
+
+section.email-form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all .1s;
+    max-width: 500px;
+}
+
+section.email-form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border-color: $DesaturatedRed;
+    border-style: solid;
+    padding-left: 30px;
+    color: #c69898;
+    position: relative;
+}
+
+input:focus {
+    outline: none;
+}
+
+section.email-form input::placeholder {
+    color: #c69898;
+    font-weight: 600;
+}
+
+.error__msg {
+    display: flex;
+    text-align: left;
+    margin: 15px 30px;
+    font-size: 0.85em;
+    color: red;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.error__icon {
+    position: absolute;
+    right: 77px;
+    top: 12px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.email:focus:invalid {
+    border: 2px solid red;
+}
+
+.email:focus:invalid+.error__icon {
+    opacity: 1;
+}
+
+.email:focus:invalid~.error__msg {
+    opacity: 1;
+}
+
+
+section.email-form .submit {
+    position: absolute;
+    background-color: #c69898;
+    border: none;
+    width: 67px;
+    height: 50px;
+    border-radius: 25px;
+    right: 0;
+}
+
+section.email-form .submit:hover {
+    cursor: pointer;
+}
+
+section.email-form .submit:focus {
+    outline: none;
+}
+
+
+// responsive design
+
+@media screen and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header {
+        width: 50%;
+        padding: 100px 150px;
+    }
+
+    header img {
+        min-width: 20em;
+        padding: 0;
+    }
+
+    section.hero {
+        width: 50%;
+        height: 100vh;
+        background: url(images/hero-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    section.hero .mobile-hero {
+        display: none;
+    }
+
+
+
+    section.hero img {
+        height: 100%;
+    }
+
+    section.main {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 200px;
+        padding-left: 150px;
+    }
+
+    section.main h1 {
+        font-size: 4em;
+    }
+
+    section.main p {
+        font-size: 1.2em;
+        max-width: 67%;
+    }
+
+    section.email-form {
+        transition: all .1s;
+        width: 100%;
+        margin: 0;
+        margin-top: 50px;
+        max-width: 67%;
+    }
+
+    section.main footer {
+        font-size: 0.65em;
+        margin-top: 200px;
+        padding: 0;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  padding: 30px;
+  max-width: 50%;
+}
+
+section.hero img {
+  width: 100%;
+  background: url();
+}
+
+section.main {
+  text-align: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.main h1 {
+  font-size: 2.7em;
+  text-transform: uppercase;
+  color: #413a3a;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+}
+
+section.main h1 span {
+  color: #c69898;
+  font-weight: 300;
+}
+
+section.main .info {
+  color: #c69898;
+  line-height: 1.5em;
+}
+
+section.email-form {
+  width: 85%;
+  margin: 50px;
+  position: relative;
+}
+
+section.email-form label {
+  display: none;
+}
+
+section.email-form {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  max-width: 500px;
+}
+
+section.email-form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border-color: #ce9797;
+  border-style: solid;
+  padding-left: 30px;
+  color: #c69898;
+  position: relative;
+}
+
+input:focus {
+  outline: none;
+}
+
+section.email-form input::-webkit-input-placeholder {
+  color: #c69898;
+  font-weight: 600;
+}
+
+section.email-form input:-ms-input-placeholder {
+  color: #c69898;
+  font-weight: 600;
+}
+
+section.email-form input::-ms-input-placeholder {
+  color: #c69898;
+  font-weight: 600;
+}
+
+section.email-form input::placeholder {
+  color: #c69898;
+  font-weight: 600;
+}
+
+.error__msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin: 15px 30px;
+  font-size: 0.85em;
+  color: red;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.error__icon {
+  position: absolute;
+  right: 77px;
+  top: 12px;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.email:focus:invalid {
+  border: 2px solid red;
+}
+
+.email:focus:invalid + .error__icon {
+  opacity: 1;
+}
+
+.email:focus:invalid ~ .error__msg {
+  opacity: 1;
+}
+
+section.email-form .submit {
+  position: absolute;
+  background-color: #c69898;
+  border: none;
+  width: 67px;
+  height: 50px;
+  border-radius: 25px;
+  right: 0;
+}
+
+section.email-form .submit:hover {
+  cursor: pointer;
+}
+
+section.email-form .submit:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header {
+    width: 50%;
+    padding: 100px 150px;
+  }
+  header img {
+    min-width: 20em;
+    padding: 0;
+  }
+  section.hero {
+    width: 50%;
+    height: 100vh;
+    background: url(images/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .mobile-hero {
+    display: none;
+  }
+  section.hero img {
+    height: 100%;
+  }
+  section.main {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: absolute;
+    top: 200px;
+    padding-left: 150px;
+  }
+  section.main h1 {
+    font-size: 4em;
+  }
+  section.main p {
+    font-size: 1.2em;
+    max-width: 67%;
+  }
+  section.email-form {
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+    max-width: 67%;
+  }
+  section.main footer {
+    font-size: 0.65em;
+    margin-top: 200px;
+    padding: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
