@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(images/bg-top.svg) #f6f6fe;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.container {
+  margin-top: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+.storage,
+.user,
+.send {
+  color: #6d708d;
+}
+
+.storage,
+.user,
+.send {
+  margin: 15px 0;
+}
+
+header {
+  text-align: center;
+}
+
+header span {
+  color: #b3b5c6;
+}
+
+header .toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card:first-of-type {
+  margin-top: 60px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.8em;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.card .numbers {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  color: #494c5f;
+}
+
+.card .anually {
+  display: none;
+}
+
+.card .learn-more {
+  text-transform: uppercase;
+  height: 45px;
+  width: 100%;
+  margin-top: 40px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0 50%, #696fdd);
+  color: #fff;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 0.5em;
+}
+
+.card .learn-more {
+  margin-bottom: 15px;
+}
+
+.card .learn-more:hover {
+  cursor: pointer;
+}
+
+.pro {
+  background: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+}
+
+.pro h2,
+.pro .numbers,
+.pro .storage,
+.pro .user,
+.pro .send,
+.pro .learn-more {
+  color: #fff;
+}
+
+.pro .learn-more {
+  background: #fff;
+  color: #7273e7;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 30px 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  right: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-26px);
+  transform: translateX(-26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.attribution {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1150px) {
+  content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .card:first-of-type {
+    margin-top: 0;
+  }
+  .card {
+    height: 500px;
+    width: 33.33%;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 350px;
+  }
+  .pro {
+    position: relative;
+    height: 550px;
+  }
+  .pro .learn-more {
+    margin-top: 65px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
